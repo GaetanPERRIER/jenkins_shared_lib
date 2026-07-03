@@ -3,7 +3,7 @@ def call() {
     withCredentials([
         string(credentialsId: "APP_ENV", variable: 'APP_ENV'),
         string(credentialsId: "APP_NAME", variable: 'APP_NAME'),
-        string(credentialsId: "APP_PORT" variable: 'PORT')
+        string(credentialsId: "APP_PORT", variable: 'PORT')
     ]) {
 
         sh """
